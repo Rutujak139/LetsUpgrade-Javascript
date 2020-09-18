@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+          }
+
+        .data {
+            height: 500px;
+            width: 80%;
+            background-color:rgb(240, 155, 155); 
+            margin-left: 10%;
+            margin-top: 50px;
+            padding: 20px;
+        }  
+
+        .table {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        th,td {
+            height: 40px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .form {
+            margin: 30px;
+        }
+
+        input {
+            height: 40px;
+            text-indent: 20px;
+        }
+
+        button {
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="data">
+
+        <div class="form">
+            <input type="text" placeholder="Search Name" onkeyup="searchByName()" id="searchName">
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Search City" onkeyup="searchByCity()" id="searchCity">
+        </div>
+
+        <table border="2" class="table" cellspacing="0px">
+            <thead>
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="tdata"> </tbody>
+        </table>
+    </div>
+    <script src="Que1.js"> </script>
+</body>
+</html>
